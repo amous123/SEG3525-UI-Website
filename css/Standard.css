@@ -13,6 +13,12 @@ html{
   margin: 0;
 }
 
+h2{
+  font-size: 4vh !important;
+  margin: auto;
+  color: green;
+}
+
 .backgroundImage{
   background-image: url('../resources/deliveryBoy.jpg');
   filter: blur(8px);
@@ -79,6 +85,7 @@ height: 100%;
   outline: none;
   font-size: 20px;
 }
+
 .searchButton:hover{
   background-color: #ccc;
 }
@@ -108,6 +115,7 @@ ul {
   top: 0;
   width: 100%;
 }
+
 .leftIcon{
   float: left;
 }
