@@ -1,6 +1,6 @@
 /* the body influences everything that doesn't have a class or id*/
 body {
-<<<<<<< HEAD
+
   background-color: #f2f2f2;
   width: 100%;
   margin: 0;
@@ -12,11 +12,10 @@ h2{
   font-size: 4vh !important;
   margin: auto;
   color: green;
-=======
-  /*background-color: #f2f2f2;*/
+  /* background-color: #f2f2f2; */
   background-color: #1d1e21;
   color: #cecece;
   margin: 0;
   font-family: Arial !important;
->>>>>>> refs/remotes/origin/master
+
 }
