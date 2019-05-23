@@ -3,7 +3,8 @@ body {
   background-color: #f2f2f2;
   width: 100%;
   background-color: #2a2b30;
-  color: #cecece;
+  /* color: #cecece; */
+  color: #1d0b0b;
   height: 100%;
   margin: 0;
   font-family: Arial !important;
@@ -107,7 +108,7 @@ height: 100%;
 	width: 35%;
 	height: 500px;
 	border-radius: 5px;
-  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+  background-color: rgba(255, 251, 251, 0.55); /* Black w/opacity/see-through */
 	transition: width .5s ease-out, height .5s ease-out;
 	vertical-align: middle;
 	position: absolute;
@@ -151,15 +152,6 @@ height: 100%;
 }
 
 .containerOrder{
-  /* position: relative;
-	top: 50%;
-	text-align: center;
-  box-sizing: content-box;
-  text-align-last: auto;
-  margin-right: 20%;
-  margin-bottom: 10%;
-  margin-left: 20%;
-  margin-top: 10%; */
   text-align: -webkit-center;
   margin-top: 16%;
 
