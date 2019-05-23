@@ -4,48 +4,63 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/Standard.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-</head>
 
-<body>
-  <div class="backgroundImage">
-  </div>
-
-  <div class="mainBody">
-    <!-- topnav is the navigation bar of the website -->
-    <ul class="navbar">
-      <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li>
-      <div class="wrap">
-        <div class="search">
-          <input type="text" class="searchTerm" placeholder="Enter your delivery address">
-          <button type="submit" class="searchButton">
-            <i class="fa fa-search"></i>
-          </button>
-        </div>
-      </div>
-      <!-- <div class="search-container">
-        <form action="/action_page.php">
-          <input type="text" placeholder="Enter your delivery address" name="search">
-          <button type="submit"><i class="fa fa-search"></i></button>
-        </form>
-      </div> -->
-      <li class="rightIcon"><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
-      <li class="rightIcon"><a href="#contact">Login</a></li>
-
-    </ul>
-
-
-    <div class="wrap">
-      <label>Find restaurants near you: </label>
+  <!-- topnav is the navigation bar of the website -->
+  <ul class="navbar">
+    <!-- <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li> -->
+    <li class="leftIcon"><a class="logo" href="index.html"><img src="resources/white_uottawa_logo.png" alt="uOttawa logo"></a></li>
+    <div class="wrapNav">
       <div class="search">
-        <input type="text" class="searchTerm" placeholder="Enter your delivery address">
-        <button type="submit" class="searchButton">
-          <i class="fa fa-search"></i>
-        </button>
-      </div>
-    </div>
-  </div>
+        <input class="searchFood" list="foodType" placeholder="Cuisine..">
+        <datalist id="foodType">
+          <option value="Any">
+            <option value="Breakfast">
+              <option value="Lunch">
+                <option value="Dinner">
+                  <option value="To go">
+                    <option value="Drinks">
+                    </datalist>
+                    <input class="searchCity" list="cityName" placeholder="City..">
+                    <datalist id="cityName">
+                      <option value="Ottawa">
+                        <option value="Montreal">
+                          <option value="Toronto">
+                            <option value="Quebec">
+                              <option value="Vancouver">
+                              </datalist>
+                              <!-- <input type="text" class="searchCity" placeholder="Enter your city"> -->
+                              <input type="text" class="searchTermNav" placeholder="Enter delivery address..">
+                              <a href="Restaurants.html">
+                                <button type="submit" class="searchButton">
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
 
+                          <li class="rightIcon"><a href="Login.html">Login</a></li>
+                          <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
+                      </head>
 
+                      <body>
+                        <div class="backgroundImage">
+                        </div>
 
-</body>
-</html>
+                        <div class="mainBody">
+
+                          <div class="wrap">
+                            <label>Find restaurants near you: </label>
+                            <div class="search">
+                              <input type="text" class="searchTerm" placeholder="Enter your postal code">
+                              <a href="Restaurants.html">
+                                <button href="Restaurants.html" type="submit" class="searchButton">
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+                        </div>
+
+                      </body>
+                      </html>
