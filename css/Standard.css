@@ -199,7 +199,8 @@ li a img{
   height: fit-content;
   padding-bottom: 30px;
 	border-radius: 5px;
-  background-color: rgba(255, 251, 251, 0.55); /* Black w/opacity/see-through */
+  background-color: rgba(255, 251, 251, 0.9);
+  /* background-color: rgba(255, 251, 251, 0.55); /* Black w/opacity/see-through */ */
 	transition: width .5s ease-out, height .5s ease-out;
 	vertical-align: middle;
 	position: absolute;
@@ -207,6 +208,15 @@ li a img{
   -webkit-mask-position-y: center;
   margin-left: 30%;
   margin-right: 50%;
+}
+
+.details {
+  color: #8D9499;
+    font-size: 14px;
+    font-family: CoreSans, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.01071em;
 }
 
 .header{
@@ -303,6 +313,15 @@ li a img{
   justify-content: inherit;
 }
 
+.h3{
+  color: #8D9499;
+    font-size: 14px;
+    font-family: CoreSans, sans-serif;
+    font-weight: 400;
+    line-height: 21px;
+    letter-spacing: 0.01071em;
+}
+
 .confirmButton{
     border-radius: 10px;
     padding: 10px 60px;
@@ -316,6 +335,27 @@ li a img{
     font-size: x-large;
     font-weight: 600;
     color: #524a46;
+}
+
+.checkoutButton{
+  width: auto;
+  border-radius: 10px;
+  padding: 10px 60px;
+  font-family: montserrat;
+  -webkit-appearance: button;
+  height: 50px;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+  text-decoration: none;
+  font-size: x-large;
+  font-weight: 600;
+  margin-top: 5%;
+  color: #524a46;
+}
+
+.linkk{
+  text-decoration: none;
 }
 
 .orderReview{
@@ -445,7 +485,6 @@ li a img{
 }
 
 .top-container-pricing p:after{
-	content: '/month';
 	color: #1d0b0b;
 	font-size: 12px;
 }
@@ -471,8 +510,7 @@ li a img{
 }
 
 .item{
-  padding-top: 18px;
-    padding-bottom: 8px;
+    padding-top: 18px;
     cursor: default;
     color: #1d0b0b;
 }
