@@ -15,6 +15,10 @@ html{
   margin: 0;
 }
 
+h1{
+  text-align: center;
+}
+
 h2{
   font-size: 4vh !important;
   margin: auto;
@@ -29,19 +33,19 @@ h2{
   -webkit-filter: blur(8px);
   height: 100%;
   width: 100%;
+  z-index: 1;
+  display: block;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  position: fixed;
 }
 
 
 .mainBody{
 background-color: rgb(0,0,0); /* Fallback color */
 background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-position: absolute;
-top: 100%;
-left: 100%;
-transform: translate(-100%, -100%);
+position: fixed;
 z-index: 2;
 width: 100%;
 height: 100%;
@@ -53,6 +57,8 @@ height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-around;
+  position: relative;
+  z-index: 100;
 }
 
 .navbar .wrap{
@@ -299,8 +305,9 @@ li a img{
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   margin-left: auto;
   margin-right: auto;
-  background-attachment: scroll;
+  overflow: scroll;
 }
+
 
 .restaurant{
   display: flex;
@@ -308,20 +315,16 @@ li a img{
   padding: 10px;
 }
 
-#firstRestaurant{
-  padding-top: 10%;
-}
-
 .restaurantContent{
   width: 50%;
   line-height: 1.6;
 }
 
-.restaurant button{
+.restaurant button, .foodMenu button{
   margin-top: 10px;
-  background-color: rgba(29,30,33, 0.5);
+  background-color: rgba(29,30,33, 0.6);
   color: #dddddd;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 10px 10px 10px 10px;
   padding: 5px;
   text-align: center;
   width: 100px;
@@ -331,8 +334,8 @@ li a img{
   cursor: pointer;
 }
 
-.restaurant button:hover{
-  background-color: rgba(29,30,33, 0.8);
+.restaurant button:hover, .foodMenu button:hover{
+  background-color: rgba(29,30,33, 0.9);
 }
 
 .restaurantImage{
@@ -343,6 +346,33 @@ li a img{
 
 .restaurantImage img{
   width: 65%;
+}
+
+.foodMenu img{
+  width: 150px;
+  height: 150px;
+}
+
+.foodMenu{
+text-align: center;
+height: 100%;
+padding: 10px;
+padding-bottom: 100px;
+line-height: 1.6;
+}
+
+.foodLeft{
+  width: 50%;
+float: left;
+padding-top: 20px;
+padding-bottom: 20px;
+
+}
+.foodRight{
+  width: 50%;
+  float: right;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .checked{
