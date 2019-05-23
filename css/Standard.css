@@ -196,7 +196,8 @@ li a img{
 	border-width: 1px;
   margin-top: 12%;
 	width: 35%;
-	height: 500px;
+  height: fit-content;
+  padding-bottom: 30px;
 	border-radius: 5px;
   background-color: rgba(255, 251, 251, 0.55); /* Black w/opacity/see-through */
 	transition: width .5s ease-out, height .5s ease-out;
@@ -272,11 +273,9 @@ li a img{
   letter-spacing: 0;
   border-radius: 20%;
   max-width: 100%;
-  height: 53px;
-  min-width: 53px;
-  min-height: 53px;
+  min-width: 80px;
+  min-height: 36px;
   text-align: center;
-  width: 53px;
   white-space: nowrap;
   color: inherit;
   border-color: currentColor;
@@ -287,6 +286,7 @@ li a img{
   line-height: 1.5;
   font-weight: 700;
   text-transform: uppercase;
+  width= -webkit-fill-available;
 }
 
 .orderListContainer{
@@ -306,16 +306,16 @@ li a img{
 .confirmButton{
     border-radius: 10px;
     padding: 10px 60px;
-    border: 3px solid;
-    color: #1d0b0b;
-    margin: 5% 0;
-    transition-duration: 0.2s;
-    outline: none;
     font-family: montserrat;
-    font-weight: bold;
-    letter-spacing: 4px;
-    font-size: 1em;
     -webkit-appearance: button;
+    height: 50px;
+    width: 100%;
+    display: inherit;
+    align-items: inherit;
+    justify-content: inherit;
+    font-size: x-large;
+    font-weight: 600;
+    color: #524a46;
 }
 
 .orderReview{
@@ -329,7 +329,7 @@ li a img{
 }
 
 .confirmation{
-  padding-left: 50px;
+  width: -webkit-fill-available;
 }
 
 .mainPayment{
@@ -383,7 +383,9 @@ li a img{
 .selectType{
     display: flex;
     justify-content: space-between;
-    padding-left: 40px;
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 .pDt{
@@ -465,8 +467,19 @@ li a img{
 
 .containerOrder{
   text-align: -webkit-center;
-  margin-top: 16%;
 
+}
+
+.item{
+  padding-top: 18px;
+    padding-bottom: 8px;
+    cursor: default;
+    color: #1d0b0b;
+}
+
+.itemSpecs{
+  box-sizing: inherit;
+  font-family: CoreSans, sans-serif !important;
 }
 
 .orderBackground{

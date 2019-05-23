@@ -4,6 +4,43 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/Standard.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+  <!-- topnav is the navigation bar of the website -->
+  <ul class="navbar">
+    <!-- <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li> -->
+    <li class="leftIcon"><a class="logo" href="index.html"><img src="resources/white_uottawa_logo.png" alt="uOttawa logo"></a></li>
+    <div class="wrapNav">
+      <div class="search">
+        <input class="searchFood" list="foodType" placeholder="Cuisine..">
+        <datalist id="foodType">
+          <option value="Any">
+            <option value="Breakfast">
+              <option value="Lunch">
+                <option value="Dinner">
+                  <option value="To go">
+                    <option value="Drinks">
+                    </datalist>
+                    <input class="searchCity" list="cityName" placeholder="City..">
+                    <datalist id="cityName">
+                      <option value="Ottawa">
+                        <option value="Montreal">
+                          <option value="Toronto">
+                            <option value="Quebec">
+                              <option value="Vancouver">
+                              </datalist>
+                              <!-- <input type="text" class="searchCity" placeholder="Enter your city"> -->
+                              <input type="text" class="searchTermNav" placeholder="Enter delivery address..">
+                              <a href="Restaurants.html">
+                                <button type="submit" class="searchButton">
+                                  <i class="fa fa-search"></i>
+                                </button>
+                              </a>
+                            </div>
+                          </div>
+
+                          <li class="rightIcon"></li>
+                          <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"></i></a></li>
+                        </ul>
 </head>
 
 <body>
@@ -11,38 +48,36 @@
 
 </div>
 <!-- topnav is the navigation bar of the website -->
-<ul class="navbar">
-  <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li>
-  <div class="wrap">
-    <div class="search">
-      <input type="text" class="searchTerm" placeholder="Enter your delivery address">
-      <button type="submit" class="searchButton">
-        <i class="fa fa-search"></i>
-      </button>
-    </div>
-  </div>
-  <li class="rightIcon"><a href="#about"><i class="fas fa-shopping-cart"></i></a></li>
-  <li class="rightIcon"><a href="#contact">Login</a></li>
 
-</ul>
 <!--  listing the order of person-->
 <div class="order">
   <div class="containerOrder">
     <div class="wrap-order" >
       <div class="top-container-pricing">
-        <h3>Free</h3>
+        <h3>El tacos</h3>
+        <div class="item" id="itemS">
+          Chicken tacos
+          <ul>
+            
+          </ul>
+          <p>Item 1 </p>
+          <p>Item 2 </p>
+          <p>Item 3 </p>
+          <p>Item 4 </p>
+        </div>
+          <input class="searchFood" list="itemSpecs" placeholder="Add to order...">
+          <datalist id="itemSpecs">
+            <option value="itemS">
+              <!-- <option value="Tomatoes">
+                <option value="Hot sauce">
+                  <option value="Cheddar cheese">
+                    <option value="Soft drink"> -->
+          </datalist>
+
         <p>Item 1 </p>
         <p>Item 2 </p>
         <p>Item 3 </p>
         <p>Item 4 </p>
-      </div>
-    </div>
-    <div class="wrap-order" >
-      <div class="top-container-pricing">
-        <h3>Premium</h3>
-        <p>Item 1 </p>
-        <p>Item 2 </p>
-        <p>Item 3 </p>
       </div>
     </div>
   </div>
