@@ -1,5 +1,7 @@
 /* the body influences everything that doesn't have a class or id*/
 body {
+  background-color: #f2f2f2;
+  width: 100%;
   background-color: #2a2b30;
   color: #cecece;
   height: 100%;
@@ -17,6 +19,8 @@ h2{
   font-size: 4vh !important;
   margin: auto;
   color: green;
+  /* background-color: #f2f2f2; */
+
 }
 
 .backgroundImage{
@@ -29,6 +33,7 @@ h2{
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 
 .mainBody{
 background-color: rgb(0,0,0); /* Fallback color */
@@ -176,6 +181,99 @@ li a img{
 
 .wrap label{
   font-size: 18px;
+}
+
+.order{
+  display: inline-block;
+	border: solid black;
+	border-width: 1px;
+  margin-top: 12%;
+	width: 35%;
+	height: 500px;
+	border-radius: 5px;
+  background-color: rgba(0,0,0, 0.8); /* Black w/opacity/see-through */
+	transition: width .5s ease-out, height .5s ease-out;
+	vertical-align: middle;
+	position: absolute;
+  -webkit-mask-position-x: center;
+  -webkit-mask-position-y: center;
+  margin-left: 30%;
+  margin-right: 50%;
+}
+
+.top-container-pricing h3, .pricing-container-pricing p{
+	text-align: center;
+}
+
+.top-container-pricing h3{
+	font-size: 200%;
+}
+
+.top-container-pricing p {
+	margin: 0;
+}
+
+.top-container-pricing p:after{
+	content: '/month';
+	color: grey;
+	font-size: 12px;
+}
+
+.features-list-container-pricing ul {
+	list-style-type: none;
+	padding: 0;
+}
+
+.features-list-container-pricing ul li{
+	text-align: center;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+
+.features-list-container-pricing ul li:nth-of-type(2n+1){
+	background-color: rgba(23, 61, 80, 0.06);
+}
+
+.containerOrder{
+  /* position: relative;
+	top: 50%;
+	text-align: center;
+  box-sizing: content-box;
+  text-align-last: auto;
+  margin-right: 20%;
+  margin-bottom: 10%;
+  margin-left: 20%;
+  margin-top: 10%; */
+  text-align: -webkit-center;
+  margin-top: 16%;
+
+}
+
+.orderBackground{
+  background-image: url('../resources/food.jpg');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.wrap-order{
+  position: relative;
+  top: 25%;
+  opacity: 0.6;
+  margin-top: 5%;
+}
+
+.order-checkbox-list{
+  margin: 5%;
+  font-weight: bold;
+  font-family: Verdana;
+  font-size: 12px;
+  color: #ffffff;
 }
 
 /*Resize the wrap to see the search bar change!*/
