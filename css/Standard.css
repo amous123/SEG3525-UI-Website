@@ -4,7 +4,7 @@ body {
   width: 100%;
   background-color: #2a2b30;
   /* color: #cecece; */
-  color: #1d0b0b;
+  color: #cecece;
   height: 100%;
   margin: 0;
   font-family: Arial !important;
@@ -202,8 +202,229 @@ li a img{
   margin-right: 50%;
 }
 
+.header{
+    margin-block-start: 2.33em;
+    margin-block-end: 2.33em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    margin-bottom: 15px;
+    font-size: x-large;
+    color: #172026;
+    max-width: 100%;
+    line-height: 28px;
+    letter-spacing: 0;
+    font-size: x-large;
+    font-weight: 800;
+    padding-bottom: 16px;
+}
+
+.orderHeader{
+    padding: 16px 16px 20px;
+    border-bottom: 1px solid #E1E5E8;
+    position: relative;
+    flex: 0 0 auto;
+    font-weight: 800;
+    font-size: x-large;
+}
+
+.OrderList{
+  overflow-y: auto;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  box-sizing: inherit;
+}
+
+.payTitle{
+  padding: 16px 0px 12px;
+}
+
+.pay{
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 16px 0 24px;
+    flex: 1;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 33%;
+    flex-grow: 1;
+}
+
+.paymentBG{
+  background-image: url('../resources/payment.jpg');
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.paymentButton{
+  letter-spacing: 0;
+  border-radius: 20%;
+  max-width: 100%;
+  height: 53px;
+  min-width: 53px;
+  min-height: 53px;
+  text-align: center;
+  width: 53px;
+  white-space: nowrap;
+  color: inherit;
+  border-color: currentColor;
+  padding: 6px 8px;
+  font-size: 10px;
+  box-sizing: border-box;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms,border 250ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+  line-height: 1.5;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.orderListContainer{
+  overflow-y: auto;
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  box-sizing: inherit;
+}
+
+.payButtSpan{
+  width: 100%;
+  display: inherit;
+  align-items: inherit;
+  justify-content: inherit;
+}
+
+.confirmButton{
+    border-radius: 10px;
+    padding: 10px 60px;
+    border: 3px solid;
+    color: #1d0b0b;
+    margin: 5% 0;
+    transition-duration: 0.2s;
+    outline: none;
+    font-family: montserrat;
+    font-weight: bold;
+    letter-spacing: 4px;
+    font-size: 1em;
+    -webkit-appearance: button;
+}
+
+.orderReview{
+    width: 100%;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    flex: 1 1 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.confirmation{
+  padding-left: 50px;
+}
+
+.mainPayment{
+    box-sizing: inherit;
+    z-index: 0;
+    flex: 1 0 auto;
+    border-radius: 8px;
+    box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
+    display: flex;
+    width: 400px;
+    flex-direction: column;
+    min-height: 0;
+    background-color: #29020294;
+    height: fit-content;
+    padding: 17px;
+    position: fixed;
+    align-items: baseline;
+    margin-top: 10%;
+    margin-left: 1%;
+}
+
+.paymentDetails{
+  position: fixed;
+  margin-left: 68.5%;
+  box-sizing: inherit;
+  font-family: CoreSans, sans-serif !important;
+  z-index: 0;
+  flex: 1 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  min-height: 0;
+  background-color: #29020294;
+  height: fit-content;
+  padding: 17px;
+  position: fixed;
+  align-items: baseline;
+  margin-top: 10%;
+}
+
+.payContainer{
+  display: inline-block;
+  width: 60%;
+  position: relative;
+  left: 60%;
+  transform: translate(-50%, -50%);
+}
+
+.selectType{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 40px;
+}
+
+.pDt{
+    color: #172026d6;
+    max-width: 100%;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 21px;
+    letter-spacing: 0;
+    margin: 0;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.deliverySpecs{
+    width: -webkit-fill-available;
+    height: 40px;
+    padding-top: 10px;
+    box-sizing: inherit;
+    margin: 0;
+    border: 0;
+    display: inline-flex;
+    padding: 0;
+    position: relative;
+    min-width: 0;
+    flex-direction: column;
+    vertical-align: top;
+}
+
+.deliveryInstructions{
+    height: inherit;
+    border-radius: 10px;
+    border-width: 0px;
+}
+
+.deliveryInfo{
+    margin-top: auto;
+    width: inherit;
+}
+
+.deliveryLocation{
+  margin-top: 20px;
+}
+
 .top-container-pricing h3, .pricing-container-pricing p{
 	text-align: center;
+  color: #1d0b0b;
 }
 
 .top-container-pricing h3{
@@ -211,12 +432,13 @@ li a img{
 }
 
 .top-container-pricing p {
+  color: #1d0b0b;
 	margin: 0;
 }
 
 .top-container-pricing p:after{
 	content: '/month';
-	color: grey;
+	color: #1d0b0b;
 	font-size: 12px;
 }
 
@@ -258,6 +480,23 @@ li a img{
   top: 25%;
   opacity: 0.6;
   margin-top: 5%;
+  text-decoration-color: #1d0b0b;
+}
+
+.container-button{
+  font-family: 'Montserrat Alternates', sans-serif;
+	color: white;
+	background-color: #1d0b0b;
+	border: none;
+	padding: 13px 35px;
+	text-align: center;
+  width: fit-content;
+	text-decoration: none;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+	outline: none;
+	border-radius: 7px;
 }
 
 .order-checkbox-list{
