@@ -5,13 +5,17 @@
   <link rel="stylesheet" href="css/Standard.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
+  <!-- scripts -->
+  <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
+ <script type="text/Javascript" src="javascript/Standard.js"></script>
+
   <!-- topnav is the navigation bar of the website -->
   <ul class="navbar">
     <!-- <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li> -->
     <li class="leftIcon"><a class="logo" href="index.html"><img src="resources/white_uottawa_logo.png" alt="uOttawa logo"></a></li>
     <div class="wrapNav">
       <div class="search">
-        <input class="searchFood" list="foodType" placeholder="Cuisine..">
+        <input id="searchCuisineId" class="searchFood" list="foodType" placeholder="Cuisine..">
         <datalist id="foodType">
           <option value="Any">
             <option value="Breakfast">
@@ -20,7 +24,7 @@
                   <option value="To go">
                     <option value="Drinks">
                     </datalist>
-                    <input class="searchCity" list="cityName" placeholder="City..">
+                    <input id="searchCityId" class="searchCity" list="cityName" placeholder="City..">
                     <datalist id="cityName">
                       <option value="Ottawa">
                         <option value="Montreal">
@@ -29,8 +33,8 @@
                               <option value="Vancouver">
                               </datalist>
                               <!-- <input type="text" class="searchCity" placeholder="Enter your city"> -->
-                              <input type="text" class="searchTermNav" placeholder="Enter delivery address..">
-                              <a href="Restaurants.html">
+                              <input id="searchAddressId" type="text" class="searchTermNav" placeholder="Enter delivery address..">
+                              <a id="searchButtonId" href="Restaurants.html">
                                 <button type="submit" class="searchButton">
                                   <i class="fa fa-search"></i>
                                 </button>
@@ -41,7 +45,7 @@
                           <li class="rightIcon"></li>
                           <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"></i></a></li>
                         </ul>
-                      </head>
+</head>
 
                       <body>
                         <div class="backgroundImage">
