@@ -22,7 +22,10 @@ h2{
   margin: auto;
   color: green;
   /* background-color: #f2f2f2; */
-
+}
+h3{
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
 .backgroundImage{
@@ -175,7 +178,7 @@ li a {
   color: white;
   text-align: center;
   padding: 5px 30px;
-  font-size: 18px;
+  font-size: 25px;
   font-weight: bold;
   text-decoration: none;
 }
@@ -636,7 +639,7 @@ li a img{
 
 .foodMenu{
 text-align: center;
-height: 100%;
+height: fit-content;
 padding: 10px;
 padding-bottom: 100px;
 line-height: 1.6;

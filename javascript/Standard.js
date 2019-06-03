@@ -1,6 +1,5 @@
 $(document).ready(function() {
-
-  /* ---- storing cookies on which language is selected ---- */
+  /* ---- storing cookies on search bar items selected ---- */
   var searchCuisine = sessionStorage.getItem('searchCuisine');
   var searchCity = sessionStorage.getItem('searchCity');
   var searchAddress = sessionStorage.getItem('searchAddress');
@@ -28,6 +27,47 @@ $('input').on('mouseleave', function() {
     $(this).val(oldValue);
   }
 });
+
+
+/* ---- storing cookies on selected restaurant ---- */
+var restaurant = sessionStorage.getItem('restaurant');
+
+$('#restaurantMenuId').html(restaurant);
+if(restaurant == "El locos tacos"){
+  $("#divTacosId").show();
+  $("#divGreekId").hide();
+  $("#divSconesId").hide();
+}
+if(restaurant == "Snow Scones Bros"){
+  $("#divTacosId").hide();
+  $("#divGreekId").hide();
+  $("#divSconesId").show();
+}
+if(restaurant == "Greek'n eggs"){
+  $("#divTacosId").hide();
+  $("#divGreekId").show();
+  $("#divSconesId").hide();
+}
+
+$('#restaurantTacosId').click(function(){
+    sessionStorage.setItem('restaurant', $('#restaurantTacos').html());
+});
+$('#restaurantSconesId').click(function(){
+    sessionStorage.setItem('restaurant', $('#restaurantScones').html());
+});
+$('#restaurantGreekId').click(function(){
+    sessionStorage.setItem('restaurant', $('#restaurantGreek').html());
+});
+
+
+/* ---- storing cookies on selected menu items ---- */
+var foodNum;
+var $newItem = $( "<span id='orderItem'"+foodNum+" '></span>" ),
+
+$( "#orderMenu" ).append( $newdiv1, [ newdiv2, existingdiv1 ] );
+
+
+
 
 // function switchEnglish() {
 //   if ($('.EN').hasClass('active')){
