@@ -51,23 +51,17 @@ height: 100%;
 }
 
 .order{
-  display: inline-block;
-	border: solid black;
-	border-width: 1px;
   margin-top: 12%;
 	width: 35%;
   height: fit-content;
   padding-bottom: 30px;
+  padding-top: 15px;
 	border-radius: 5px;
   background-color: rgba(255, 251, 251, 0.9);
-  /* background-color: rgba(255, 251, 251, 0.55); /* Black w/opacity/see-through */ */
 	transition: width .5s ease-out, height .5s ease-out;
-	vertical-align: middle;
-	position: absolute;
-  -webkit-mask-position-x: center;
-  -webkit-mask-position-y: center;
-  margin-left: 30%;
-  margin-right: 50%;
+	position: relative;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .mainPayment{
@@ -267,6 +261,56 @@ li a img{
   box-sizing: inherit;
 }
 
+.orderItem{
+  width: 100%;
+  color: #1b1c1f;
+}
+
+#orderMenuContainer{
+  display: flex;
+}
+
+#orderMenuContainer .fas{
+  cursor: pointer;
+}
+#orderMenuContainer .fas:hover{
+  color: red;
+}
+
+#orderRemove{
+  padding: 10;
+  display: grid;
+  text-align: center;
+  width: 10%;
+}
+#orderMenu{
+  padding: 10;
+  padding-left: 0;
+  padding-right: 0;
+  display: grid;
+  text-align: left;
+  width: 60%;
+}
+#orderPrice{
+  padding: 10;
+  padding-left: 0;
+  display: grid;
+  text-align: right;
+  width: 30%;
+}
+
+#basketNum{
+  font-size: 20px;
+  color: #ffffff;
+  transform: translate(-12px, -10px);
+  vertical-align: top;
+  position: absolute;
+  background: #003ffbad;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
+
 .payTitle{
   padding: 16px 0px 12px;
 }
@@ -376,7 +420,7 @@ li a img{
   text-decoration: none;
 }
 
-.orderReview{
+/* .orderReview{
     width: 100%;
     background-color: #fff;
     border-radius: 8px;
@@ -384,7 +428,7 @@ li a img{
     flex: 1 1 auto;
     display: flex;
     flex-direction: column;
-}
+} */
 
 .confirmation{
   width: -webkit-fill-available;
@@ -475,6 +519,7 @@ li a img{
 .top-container-pricing h3, .pricing-container-pricing p{
 	text-align: center;
   color: #1d0b0b;
+  padding-bottom: 15px;
 }
 
 .top-container-pricing h3{
