@@ -272,6 +272,7 @@ li a img{
 
 #orderMenuContainer .fas{
   cursor: pointer;
+  color: #1b1c1f;
 }
 #orderMenuContainer .fas:hover{
   color: red;
