@@ -213,6 +213,11 @@ li a img{
     font-weight: 400;
     line-height: 21px;
     letter-spacing: 0.01071em;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: -webkit-fill-available;
 }
 
 .header{
@@ -370,22 +375,43 @@ li a img{
 }
 
 .mainPayment{
-    box-sizing: inherit;
-    z-index: 0;
-    flex: 1 0 auto;
-    border-radius: 8px;
-    box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
-    display: flex;
-    width: 400px;
-    flex-direction: column;
-    min-height: 0;
-    background-color: #ffffff8a;
-    height: fit-content;
-    padding: 17px;
-    position: fixed;
-    align-items: baseline;
-    margin-top: 10%;
-    margin-left: 1%;
+  box-sizing: inherit;
+  z-index: 0;
+  flex: 1 0 auto;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  min-height: 0;
+  background-color: #ffffff8a;
+  height: fit-content;
+  padding: 17px;
+  position: relative;
+  align-items: baseline;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-right: 5%;
+  min-height: fit-content;
+}
+
+.Card-Validation-Form{
+  box-sizing: inherit;
+  z-index: 0;
+  border-radius: 8px;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+  min-height: 0;
+  background-color: #ffffff8a;
+  height: fit-content;
+  padding: 17px;
+  position: relative;
+  align-items: baseline;
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 5%;
 }
 
 .paymentDetails{
@@ -394,7 +420,6 @@ li a img{
   box-sizing: inherit;
   font-family: CoreSans, sans-serif !important;
   z-index: 0;
-  flex: 1 0 auto;
   border-radius: 8px;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
   display: flex;
@@ -410,19 +435,26 @@ li a img{
 }
 
 .payContainer{
-  display: inline-block;
+  /* display: inline-block;
   width: 60%;
   position: relative;
   left: 60%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 5%;
+  display: flex;
+  height: auto;
+  width: 65%;
+  position: relative;
 }
 
 .selectType{
     display: flex;
     justify-content: space-between;
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
 }
 
 .pDt{
@@ -456,6 +488,7 @@ li a img{
     height: inherit;
     border-radius: 10px;
     border-width: 0px;
+    width: 100%;
 }
 
 .deliveryInfo{
@@ -590,7 +623,6 @@ li a img{
 
 .restaurant{
   display: flex;
-  /* justify-content: space-around; */
   padding: 10px;
 }
 
@@ -656,4 +688,126 @@ padding-bottom: 20px;
 
 .checked{
   color: orange;
+}
+
+
+/*
+  Payment page css
+ */
+ .creditCardForm {
+    max-width: 700px;
+    background-color: #fff;
+    margin: 100px auto;
+    overflow: hidden;
+    padding: 25px;
+    color: #4c4e56;
+}
+.creditCardForm label {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.creditCardForm .heading h1 {
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    color: #4c4e56;
+}
+.creditCardForm .payment {
+    float: left;
+    font-size: 18px;
+    padding: 10px 25px;
+    margin-top: 20px;
+    position: relative;
+}
+
+.payment{
+  margin-left: auto;
+  margin-right: auto;
+}
+.creditCardForm .payment .form-group {
+    float: left;
+    margin-bottom: 15px;
+}
+.creditCardForm .payment .form-control {
+    line-height: 40px;
+    height: auto;
+    padding: 0 16px;
+}
+.creditCardForm .owner {
+    width: 63%;
+    margin-right: 10px;
+}
+.creditCardForm .CVV {
+    width: 35%;
+}
+.creditCardForm #card-number-field {
+    width: 100%;
+}
+.creditCardForm #expiration-date {
+    width: 49%;
+}
+.creditCardForm #credit_cards {
+    width: 50%;
+    margin-top: 25px;
+    text-align: right;
+}
+.creditCardForm #pay-now {
+    width: 100%;
+    margin-top: 25px;
+}
+.creditCardForm .payment .btn {
+    width: 100%;
+    margin-top: 3px;
+    font-size: 24px;
+    background-color: #2ec4a5;
+    color: white;
+}
+.creditCardForm .payment select {
+    padding: 10px;
+    margin-right: 15px;
+
+}
+
+.paymentButton .payConfirmation{
+    width: -webkit-fill-available;
+    margin-top: auto;
+}
+
+.paymentButton .payConfirmation{
+    margin-left: auto;
+    margin-right: auto;
+}
+ .payConfirm{
+    display: contents;
+    padding: initial;
+    margin-top: 10px;
+    background-color: rgba(29,30,33, 0.6);
+    color: #dddddd;
+    border-radius: 10px 10px 10px 10px;
+    padding: 5px;
+    text-align: center;
+    width: 100px;
+    outline: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cardPic{
+  visibility: hidden;
+  margin-bottom: auto;
+}
+
+.transparent {
+    opacity: 0.2;
+}
+@media(max-width: 650px) {
+    .creditCardForm .owner,
+    .creditCardForm .CVV,
+    .creditCardForm #expiration-date,
+    .creditCardForm #credit_cards {
+        width: 100%;
+    }
+    .creditCardForm #credit_cards {
+        text-align: left;
+    }
 }

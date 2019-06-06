@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/Standard.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <!-- topnav is the navigation bar of the website -->
   <ul class="navbar">
     <!-- <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li> -->
@@ -40,15 +40,17 @@
 
                           <li class="rightIcon"></li>
                           <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"></i></a></li>
-                        </ul>
+  </ul>
 </head>
 
 <body>
   <div class="paymentBG">
   </div>
-    <div class="payContainer">
-      <main class="mainPayment">
 
+  <div class="payContainer">
+
+    <div class="mainPayment">
+      <div class="details">
         <div class="deliveryInfo">
 
           <div class="orderHeader">
@@ -79,9 +81,7 @@
           <div class="deliverySpecs">
             <input type="text" class="deliveryInstructions" placeholder="Delivery instructions:">
           </div>
-
         </div>
-
 
         <div class="orderHeader">
 
@@ -89,69 +89,159 @@
               Checkout
           </header>
         </div>
-        <div class="OrderList">
 
+        <div class="OrderList">
           <div class="orderListContainer">
 
-            <div class="price">
-              <pl class="pDt">
-                Your total is: 34.45$
-              </pl>
-              <pl class="pDt">
-                Your payment method
-              </pl>
+                <div class="price">
+                  <pl class="pDt">
+                    Your total is: 34.45$
+                  </pl>
+                  <pl class="pDt">
+                    Your payment method
+                  </pl>
+                </div>
+
+                <div class="selectType">
+                  <div class="restaurant button">
+                    <button class="paymentButton">
+                      <span class="payButtSpan">
+                        Debit
+                      </span>
+                    </button>
+                  </div>
+
+                  <div class="restaurant button">
+                    <button class="paymentButton">
+                      <span class="payButtSpan">
+                        Credit
+                      </span>
+                    </button>
+                  </div>
+
+                </div>
+
+                <div class="confirmation" >
+                  <!-- <div class="paymentButton">
+                       <button type="submit" class="confirmButton"> Confirm Order</button>
+                  </div> -->
+                </div>
+
             </div>
+                <!-- <div class="payment">
+                  <div class="paymentInfo">
+                    <div class="close"></div>
+                    <div class="cardInfo">
+                      <div class="cardForm">
+                        <form >
+                          <div class="cardNumber">
+                            <div class="cN-Out">
+                              <label class="cardDetail">Card Number</label>
+                              <div>
+                                <div class="cardNum-input">
+                                  <input type="text" class="cardNum" id=cardNumber>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="cardValidation">
+                          </div>
+                          <div class="cardLocation">
+                          </div>
 
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="addInfo">
+                  </div>
+                </div> -->
+        </div>
+      </div>
+    </div>
 
-            <div class="selectType">
-              <div class="restaurant button">
-                <button class="paymentButton">
-                  <span class="payButtSpan">
-                    Debit
-                  </span>
-                </button>
+    <div class="Card-Validation-Form">
+      <div class="payment">
+        <div class="orderHeader">
+          <header>
+            Payment Info
+          </header>
+        </div>
+          <form>
+              <div class="form-group owner">
+                  <label for="owner">Owner</label>
+                  <input type="text" class="form-control" id="owner">
               </div>
-
-              <div class="restaurant button">
-                <button class="paymentButton">
-                  <span class="payButtSpan">
-                    Credit
-                  </span>
-                </button>
+              <div class="form-group CVV" >
+                  <label for="cvv">CVV</label>
+                  <input type="text" class="form-control" id="cvv">
               </div>
-
-              <div class="restaurant button">
-                <button class="paymentButton">
-                  <span class="payButtSpan">
-                    Cash
-                  </span>
-                </button>
+              <div class="form-group" id="card-number-field">
+                  <label for="cardNumber">Card Number</label>
+                  <input type="text" class="form-control" id="cardNumber">
               </div>
-            </div>
-
-<div class="confirmation" >
-  <div class="paymentButton">
-
-         <button type="submit" class="confirmButton"> Confirm Order</button>
-
-    <!-- <button type="button"  class="confirmButton" onclick="">
-        Confirm order
-    </button> -->
+              <div class="form-group" id="expiration-date">
+                  <label>Expiration Date</label>
+                  <select>
+                      <option value="01">January</option>
+                      <option value="02">February </option>
+                      <option value="03">March</option>
+                      <option value="04">April</option>
+                      <option value="05">May</option>
+                      <option value="06">June</option>
+                      <option value="07">July</option>
+                      <option value="08">August</option>
+                      <option value="09">September</option>
+                      <option value="10">October</option>
+                      <option value="11">November</option>
+                      <option value="12">December</option>
+                  </select>
+                  <select>
+                      <option value="16"> 2016</option>
+                      <option value="17"> 2017</option>
+                      <option value="18"> 2018</option>
+                      <option value="19"> 2019</option>
+                      <option value="20"> 2020</option>
+                      <option value="21"> 2021</option>
+                      <option value="22"> 2022</option>
+                      <option value="23"> 2023</option>
+                      <option value="24"> 2024</option>
+                      <option value="25"> 2025</option>
+                      <option value="26"> 2026</option>
+                      <option value="27"> 2027</option>
+                      <option value="28"> 2028</option>
+                      <option value="29"> 2029</option>
+                      <option value="30"> 2030</option>
+                      <option value="31"> 2031</option>
+                      <option value="32"> 2032</option>
+                      <option value="33"> 2033</option>
+                      <option value="34"> 2034</option>
+                      <option value="35"> 2035</option>
+                      <option value="36"> 2036</option>
+                      <option value="37"> 2037</option>
+                  </select>
+              </div>
+              <!-- <div class="cardPic form-group" id="credit_cards" visibility=hidden>
+                  <img src="resources/visa.jpg" id="visa">
+                  <img src="resources/mastercard.jpg" id="mastercard">
+                  <img src="resources/amex.jpg" id="amex">
+              </div> -->
+              <!-- <div class="form-group" id="pay-now">
+                  <button type="submit" class="btn btn-default" id="confirm-purchase"></button>
+              </div> -->
+              <div class="restaurant button payConfirm" display="initial" padding="initial">
+                <div class="paymentButton payConfirmation" id="pay-now">
+                     <button type="submit" class="paymentButton payConfirmation">
+                       <span class="payButtSpan">
+                         Confirm
+                       </span>
+                     </button>
+                </div>
+              </div>
+          </form>
+      </div>
     </div>
   </div>
-
-
-          </div>
-
-        </div>
-
-
-      </main>
-    </div>
-
-      <!-- <main class="paymentDetails">
-
-        </main> -->
 
 </body>
 </html>
