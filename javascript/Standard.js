@@ -149,6 +149,15 @@ $("#debitCard").click(function(){
 $("#creditCard").click(function(){
     $("#security").show();
 });
+
+var d = new Date();
+var days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+var months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+
+
+var strDate = days[d.getDay()]+ " " + months[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear()+ "  at " + d.getHours() + ":" + d.getMinutes();
+
+$("#orderDate").append("<span class='pDt'>" + strDate + "</span>");
 /* ---- Adding price to payment page ---- */
 
 /* ---- removing menu items ---- */
