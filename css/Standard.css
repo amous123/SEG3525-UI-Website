@@ -352,7 +352,6 @@ li a img{
   min-width: 80px;
   min-height: 36px;
   text-align: center;
-  white-space: nowrap;
   color: inherit;
   border-color: currentColor;
   padding: 6px 8px;
@@ -468,7 +467,7 @@ li a img{
   border-radius: 8px;
   box-shadow: 0 0 8px 0 rgba(0,0,0,0.12), 0 8px 8px 0 rgba(0,0,0,0.12);
   display: flex;
-  width: 50%;
+  width: -webkit-fill-available;
   flex-direction: column;
   min-height: 0;
   background-color: #ffffff8a;
@@ -795,14 +794,27 @@ padding-bottom: 20px;
   margin-left: auto;
   margin-right: auto;
 }
-.creditCardForm .payment .form-group {
-    float: left;
+.form-group {
     margin-bottom: 15px;
+    color: #4c4e56;
 }
-.creditCardForm .payment .form-control {
+.form-control {
     line-height: 40px;
     height: auto;
     padding: 0 16px;
+    display:block;
+    width:100%;
+    height:34px;
+    padding:6px 12px;
+    font-size:14px;
+    line-height:1.42857143;
+    color:#555;
+    background-color:#fff;
+    background-image:none;
+    border:1px solid #ccc;
+    border-radius:4px;
+    -webkit-box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
+    box-shadow:inset 0 1px 1px rgba(0,0,0,.075);
 }
 .creditCardForm .owner {
     width: 63%;
