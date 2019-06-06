@@ -139,6 +139,18 @@ $( "#orderRemove" ).append( "<span class='orderRemove'><i class='fas fa-receipt'
 $( "#orderMenu" ).append( "<span class='orderItem'>Total: </span>" );
 $( "#orderPrice" ).append( "<span class='orderItem'>$"+priceTotal.toFixed(2)+"</span>" );
 
+/* ---- Adding price to payment page ---- */
+$( "#cost").append("<span class='pDt'>Your total is: $"+priceTotal.toFixed(2)+"</span>" );
+
+$("#debitCard").click(function(){
+    $("#security").hide();
+});
+
+$("#creditCard").click(function(){
+    $("#security").show();
+});
+/* ---- Adding price to payment page ---- */
+
 /* ---- removing menu items ---- */
 $( "#menuItem1" ).click(function(){
   if(obj["menuItemNum1"] < 1){

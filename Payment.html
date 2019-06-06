@@ -4,15 +4,13 @@
   <meta charset="utf-8" />
   <link rel="stylesheet" href="css/Standard.css" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-<<<<<<< HEAD
+
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-=======
 
   <!-- scripts -->
   <script type="text/JavaScript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js" ></script>
  <script type="text/Javascript" src="javascript/Standard.js"></script>
 
->>>>>>> 84baa097e77673d68ff93a83e417cff915ab8263
   <!-- topnav is the navigation bar of the website -->
   <ul class="navbar">
     <!-- <li class="leftIcon"><a href="#news"><i class="fas fa-seedling"></i> Food Sprouters</i></a></li> -->
@@ -47,13 +45,8 @@
                           </div>
 
                           <li class="rightIcon"></li>
-<<<<<<< HEAD
-                          <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"></i></a></li>
-  </ul>
-=======
                           <li class="rightIcon"><a href="Order.html"><i class="fas fa-shopping-cart"><span id="basketNum">0</span></i></a></li>
                         </ul>
->>>>>>> 84baa097e77673d68ff93a83e417cff915ab8263
 </head>
 
 <body>
@@ -106,10 +99,13 @@
         <div class="OrderList">
           <div class="orderListContainer">
 
-                <div class="price">
-                  <pl class="pDt">
+                <div class="price" id="cost">
+                  <!-- <span class="pDt">
+
+                  </span> -->
+                  <!-- <pl class="pDt">
                     Your total is: 34.45$
-                  </pl>
+                  </pl> -->
                   <pl class="pDt">
                     Your payment method
                   </pl>
@@ -117,7 +113,7 @@
 
                 <div class="selectType">
                   <div class="restaurant button">
-                    <button class="paymentButton">
+                    <button class="paymentButton" id="debitCard">
                       <span class="payButtSpan">
                         Debit
                       </span>
@@ -125,7 +121,7 @@
                   </div>
 
                   <div class="restaurant button">
-                    <button class="paymentButton">
+                    <button class="paymentButton" id="creditCard">
                       <span class="payButtSpan">
                         Credit
                       </span>
@@ -185,7 +181,7 @@
                   <label for="owner">Owner</label>
                   <input type="text" class="form-control" id="owner">
               </div>
-              <div class="form-group CVV" >
+              <div class="form-group CVV" id="security">
                   <label for="cvv">CVV</label>
                   <input type="text" class="form-control" id="cvv">
               </div>
@@ -210,9 +206,6 @@
                       <option value="12">December</option>
                   </select>
                   <select>
-                      <option value="16"> 2016</option>
-                      <option value="17"> 2017</option>
-                      <option value="18"> 2018</option>
                       <option value="19"> 2019</option>
                       <option value="20"> 2020</option>
                       <option value="21"> 2021</option>
