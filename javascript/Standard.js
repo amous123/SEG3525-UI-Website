@@ -120,7 +120,7 @@ $('#menuItemButt5').click(function(){
 $('#menuItemButt6').click(function(){
     sessionStorage.setItem('menuItem6', $('#menuItem6').html());
     sessionStorage.setItem('priceItem6', $('#priceItem6').html());
-    sessionStorage.setItem('menuItemNum5', ++obj["menuItemNum6"]);
+    sessionStorage.setItem('menuItemNum6', ++obj["menuItemNum6"]);
     sessionStorage.setItem('basketItemsNum', ++basketItemsNum);
     $('#basketNum').html(basketItemsNum);
 });
